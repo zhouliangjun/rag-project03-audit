@@ -1,7 +1,7 @@
-# 手工制作一个RAG框架
+# ESG合规审计系统
 
-一个从零开始实现的 RAG (Retrieval Augmented Generation) 系统，不依赖现有的 RAG 框架。该项目旨在提供一个轻量级、可定制的知识库问答解决方案。
-![RAG Frontend](images/RAG-fontend.png)
+一个从零开始实现的基于 RAG (Retrieval Augmented Generation) 的合规审计系统，可持续发展报告检查工具。
+![RAG Frontend](images/system.png)
 
 ## 项目概述
 

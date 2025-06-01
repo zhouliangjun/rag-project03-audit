@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import nvidiaImage from '../assets/Nvidia.png'; // 导入NVIDIA图片
+import { apiBaseUrl } from '../config/config';
 
 const Evaluation = () => {
   const [file, setFile] = useState(null);
@@ -14,7 +15,7 @@ const Evaluation = () => {
   useEffect(() => {
     const fetchCollections = async () => {
       try {
-        const response = await fetch('http://localhost:8001/collections?provider=milvus');
+        const response = await fetch(`${apiBaseUrl}/collections?provider=milvus`);
         const data = await response.json();
         setCollections(data.collections);
       } catch (error) {
@@ -40,7 +41,7 @@ const Evaluation = () => {
     formData.append('threshold', threshold);
 
     try {
-      const response = await fetch('http://localhost:8001/evaluate', {
+      const response = await fetch(`${apiBaseUrl}/evaluate`, {
         method: 'POST',
         body: formData,
       });

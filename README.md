@@ -124,7 +124,7 @@ export DEEPSEEK_API_KEY="xxxx"
 # 进入后端代码目录
 cd backend/
 # 启动
-uvicorn main:app --reload --port 8001 --host 0.0.0.0
+uvicorn main:app --reload --port 8000 --host 0.0.0.0
 ```
 
 *(请确保您的后端主文件是 `main.py` 并且 FastAPI 应用实例名为 `app`。如果端口 `8001` 被占用，请更换为其他可用端口。)*
